@@ -164,9 +164,9 @@ my_gnome_ext(){
     PIP=`which pip3 2> /dev/null | grep -icw pip3`
     if [ "$GEC" -eq "0" ] ; then
         if [ "$PIP" -eq "0" ] ; then
-            sudo install python3-pip -y 
+            sudo dnf install python3-pip -y 
         fi
-            pip3 install gnome-extensions-cli -y
+            pip install gnome-extensions-cli -y
     fi
 
     # disable all extensions
